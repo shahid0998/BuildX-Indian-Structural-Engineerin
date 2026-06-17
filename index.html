@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildX Indian Structural Engineering | Excellence in Structural Design</title>
+  <meta name="description" content="BuildX Indian Structural Engineering delivers world-class structural solutions — bridges, high-rises, industrial facilities, and retrofitting across India. Precision. Strength. Legacy." />
+  <meta name="keywords" content="structural engineering India, civil engineering Gurgaon, bridge design, high rise buildings, industrial structures, retrofitting, foundation design, BuildX" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://indianstructuralengineering.com/" />
+  <meta property="og:title" content="BuildX Indian Structural Engineering | Excellence in Structural Design" />
+  <meta property="og:description" content="Delivering world-class structural engineering solutions with precision, strength, and legacy across India." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo" id="logo-link">
+      <div class="nav-logo-icon">🏗</div>
+      Build<span>X</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav-cta">Get In Touch</a>
+    </div>
+    <button class="nav-mobile-btn" id="mobile-btn" aria-label="Toggle menu">
+      <svg id="menu-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" id="mm-about">About</a>
+    <a href="#services" id="mm-services">Services</a>
+    <a href="#projects" id="mm-projects">Projects</a>
+    <a href="#process" id="mm-process">Process</a>
+    <a href="#testimonials" id="mm-testimonials">Reviews</a>
+    <a href="#contact" id="mm-contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Gurgaon, Haryana · IS Code Compliant · Trusted Since 2005
+      </div>
+      <h1 class="hero-title">
+        Building<br/>
+        the <span class="accent">Future</span><br/>
+        in Steel.
+      </h1>
+      <p class="hero-subtitle">
+        World-class structural engineering solutions — designed for precision, built for legacy, engineered to last generations.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary" id="hero-projects-btn">View Our Projects</a>
+        <a href="#contact" class="btn-secondary" id="hero-contact-btn">Start a Project</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <div class="marquee-item">Bridge Design <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">High-Rise Structures <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Industrial Facilities <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Structural Retrofitting <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Seismic Analysis <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Foundation Engineering <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Steel Fabrication <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Load Analysis <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Bridge Design <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">High-Rise Structures <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Industrial Facilities <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Structural Retrofitting <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Seismic Analysis <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Foundation Engineering <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Steel Fabrication <span class="marquee-sep">✦</span></div>
+      <div class="marquee-item">Load Analysis <span class="marquee-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <div class="section-label">About BuildX</div>
+          <h2 class="section-title">Engineering<br/><span class="dim">Excellence,</span><br/>Redefined.</h2>
+          <p>BuildX Indian Structural Engineering is a premier structural consultancy based in Gurgaon, Haryana. From towering high-rises to mission-critical bridges, we blend cutting-edge computational analysis with time-proven engineering principles.</p>
+          <p style="margin-top: 16px;">Our certified team of engineers delivers projects across India — combining precision design, IS/IRC code compliance, and a commitment to building structures that stand for generations.</p>
+          <div class="about-stats">
+            <div class="stat-card reveal delay-1">
+              <div class="stat-num" data-count="500">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card reveal delay-2">
+              <div class="stat-num" data-count="25">0</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card reveal delay-3">
+              <div class="stat-num" data-count="150">0</div>
+              <div class="stat-label">Expert Engineers</div>
+            </div>
+            <div class="stat-card reveal delay-4">
+              <div class="stat-num" data-count="12">0</div>
+              <div class="stat-label">Countries Served</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal-right">
+          <div class="float-card">
+            <strong>98%</strong>
+            <span>Client Satisfaction</span>
+          </div>
+          <div class="about-img-wrap">
+            <img src="images/project_highrise.png" alt="StructForce high-rise engineering project" />
+            <div class="about-img-overlay"></div>
+            <div class="about-badge">
+              <strong>ISO 9001:2015</strong>
+              <p>Quality Management Certified</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header">
+        <div class="reveal">
+          <div class="section-label">What We Do</div>
+          <h2 class="section-title">Our Core<br/><span class="dim">Services.</span></h2>
+        </div>
+        <div class="reveal delay-2">
+          <a href="#contact" class="btn-secondary" id="services-cta-btn">Get a Quote →</a>
+        </div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal delay-1">
+          <div class="service-num">01</div>
+          <div class="service-icon">🏗️</div>
+          <h3 class="service-title">Structural Design</h3>
+          <p class="service-desc">Complete structural design for residential, commercial, and industrial buildings using advanced FEA software and BIM integration.</p>
+          <div class="service-tags">
+            <span class="tag">BIM/CAD</span>
+            <span class="tag">FEA Analysis</span>
+            <span class="tag">RCC/Steel</span>
+          </div>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-num">02</div>
+          <div class="service-icon">🌉</div>
+          <h3 class="service-title">Bridge Engineering</h3>
+          <p class="service-desc">Design and assessment of highway, railway, and pedestrian bridges with comprehensive load analysis and durability evaluation.</p>
+          <div class="service-tags">
+            <span class="tag">Suspension</span>
+            <span class="tag">Cable-Stay</span>
+            <span class="tag">Girder</span>
+          </div>
+        </div>
+        <div class="service-card reveal delay-3">
+          <div class="service-num">03</div>
+          <div class="service-icon">🏭</div>
+          <h3 class="service-title">Industrial Structures</h3>
+          <p class="service-desc">Heavy industrial plants, warehouses, petrochemical facilities, and power plants designed to handle extreme operational loads.</p>
+          <div class="service-tags">
+            <span class="tag">Steel Frames</span>
+            <span class="tag">Pre-Engineered</span>
+            <span class="tag">Heavy Load</span>
+          </div>
+        </div>
+        <div class="service-card reveal delay-1">
+          <div class="service-num">04</div>
+          <div class="service-icon">🔧</div>
+          <h3 class="service-title">Structural Retrofitting</h3>
+          <p class="service-desc">Assessment and strengthening of existing structures — seismic upgrades, FRP wrapping, jacketing, and structural repairs.</p>
+          <div class="service-tags">
+            <span class="tag">Seismic</span>
+            <span class="tag">FRP Wrap</span>
+            <span class="tag">Jacketing</span>
+          </div>
+        </div>
+        <div class="service-card reveal delay-2">
+          <div class="service-num">05</div>
+          <div class="service-icon">🌍</div>
+          <h3 class="service-title">Foundation Engineering</h3>
+          <p class="service-desc">Deep and shallow foundation design, pile analysis, soil-structure interaction studies, and underpinning solutions.</p>
+          <div class="service-tags">
+            <span class="tag">Piling</span>
+            <span class="tag">Raft</span>
+            <span class="tag">Ground Improvement</span>
+          </div>
+        </div>
+        <div class="service-card reveal delay-3">
+          <div class="service-num">06</div>
+          <div class="service-icon">📊</div>
+          <h3 class="service-title">Structural Audit</h3>
+          <p class="service-desc">NDT-based condition assessment, load testing, and comprehensive structural health monitoring for existing infrastructure.</p>
+          <div class="service-tags">
+            <span class="tag">NDT</span>
+            <span class="tag">Load Testing</span>
+            <span class="tag">SHM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <div class="reveal">
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">Featured <span class="dim">Projects.</span></h2>
+        </div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card large reveal-left">
+          <img src="images/project_bridge.png" alt="Zojila Suspension Bridge Project" loading="lazy" />
+          <div class="project-overlay"></div>
+          <div class="project-content">
+            <div class="project-cat">Bridge Engineering</div>
+            <h3 class="project-title">Zojila High-Altitude Suspension Bridge</h3>
+            <div class="project-meta">
+              <span>📍 Jammu & Kashmir</span>
+              <span>📅 2023</span>
+              <span>💰 ₹480 Cr</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-card reveal delay-2">
+          <img src="images/project_highrise.png" alt="Skyline Tower Project" loading="lazy" />
+          <div class="project-overlay"></div>
+          <div class="project-content">
+            <div class="project-cat">High-Rise Structure</div>
+            <h3 class="project-title">Skyline Tower Complex</h3>
+            <div class="project-meta">
+              <span>📍 Delhi NCR</span>
+              <span>📅 2022</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-card reveal delay-3">
+          <img src="images/project_industrial.png" alt="Industrial Steel Plant Project" loading="lazy" />
+          <div class="project-overlay"></div>
+          <div class="project-content">
+            <div class="project-cat">Industrial Facility</div>
+            <h3 class="project-title">Thermal Power Plant Structural Frame</h3>
+            <div class="project-meta">
+              <span>📍 Rajasthan</span>
+              <span>📅 2024</span>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="reveal" style="text-align:center; margin-bottom: 0;">
+        <div class="section-label" style="justify-content:center;">
+          <span style="display:none;"></span>Our Methodology
+        </div>
+        <h2 class="section-title">How We <span class="dim">Work.</span></h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal delay-1">
+          <div class="step-dot">01</div>
+          <h3 class="step-title">Discovery & Scope</h3>
+          <p class="step-desc">We conduct a thorough site visit, review existing data, and define clear project parameters in collaboration with your team.</p>
+        </div>
+        <div class="process-step reveal delay-2">
+          <div class="step-dot">02</div>
+          <h3 class="step-title">Analysis & Design</h3>
+          <p class="step-desc">Using ETABS, STAAD Pro, and ANSYS, our engineers develop structural models and optimize designs for safety and economy.</p>
+        </div>
+        <div class="process-step reveal delay-3">
+          <div class="step-dot">03</div>
+          <h3 class="step-title">Documentation & Approval</h3>
+          <p class="step-desc">Comprehensive drawing sets and calculation reports are prepared, meeting all relevant IS/IRC code requirements for statutory approval.</p>
+        </div>
+        <div class="process-step reveal delay-4">
+          <div class="step-dot">04</div>
+          <h3 class="step-title">Site Support & Handover</h3>
+          <p class="step-desc">Our team provides construction supervision, RFI resolution, and detailed as-built documentation through project completion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="testimonials-header container">
+      <div class="section-label reveal">Client Testimonials</div>
+      <h2 class="section-title reveal">What Clients <span class="dim">Say.</span></h2>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="testimonials-track">
+        <!-- Set 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"StructForce delivered our bridge project on time and under budget. Their technical expertise in cable-stayed design is unmatched in the industry."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <div class="author-name">Rajiv Kumar</div>
+              <div class="author-role">Project Director, NHAI</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"The seismic retrofitting they performed on our 1970s office building gave us complete confidence. Minimal disruption, maximum safety upgrade."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <div class="author-name">Anita Patel</div>
+              <div class="author-role">Facilities Head, TechCorp India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"From foundation analysis to steel detailing, StructForce handled our 45-story tower with exceptional precision. True engineering partners."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MS</div>
+            <div>
+              <div class="author-name">Mohammad Suleman</div>
+              <div class="author-role">CEO, Al-Futtaim Construction</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Their structural audit saved our facility from major failures. The NDT reports were detailed and actionable. Highly professional team."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Sunita Kohli</div>
+              <div class="author-role">Plant Manager, NTPC Limited</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"The industrial steel frame design was innovative and cost-effective. StructForce reduced our steel tonnage by 18% without compromising safety."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">VR</div>
+            <div>
+              <div class="author-name">Vikram Rao</div>
+              <div class="author-role">VP Engineering, Steel Authority of India</div>
+            </div>
+          </div>
+        </div>
+        <!-- Set 2 (duplicate for infinite scroll) -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"StructForce delivered our bridge project on time and under budget. Their technical expertise in cable-stayed design is unmatched in the industry."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <div class="author-name">Rajiv Kumar</div>
+              <div class="author-role">Project Director, NHAI</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"The seismic retrofitting they performed on our 1970s office building gave us complete confidence. Minimal disruption, maximum safety upgrade."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <div class="author-name">Anita Patel</div>
+              <div class="author-role">Facilities Head, TechCorp India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"From foundation analysis to steel detailing, StructForce handled our 45-story tower with exceptional precision. True engineering partners."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MS</div>
+            <div>
+              <div class="author-name">Mohammad Suleman</div>
+              <div class="author-role">CEO, Al-Futtaim Construction</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Their structural audit saved our facility from major failures. The NDT reports were detailed and actionable. Highly professional team."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Sunita Kohli</div>
+              <div class="author-role">Plant Manager, NTPC Limited</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"BuildX delivered our bridge project on time and under budget. Their technical expertise in cable-stayed design is unmatched in the industry."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RK</div>
+            <div>
+              <div class="author-name">Rajiv Kumar</div>
+              <div class="author-role">Project Director, NHAI</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"The seismic retrofitting they performed on our 1970s office building gave us complete confidence. Minimal disruption, maximum safety upgrade."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AP</div>
+            <div>
+              <div class="author-name">Anita Patel</div>
+              <div class="author-role">Facilities Head, TechCorp India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"From foundation analysis to steel detailing, BuildX handled our 45-story tower with exceptional precision. True engineering partners."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MS</div>
+            <div>
+              <div class="author-name">Mohammad Suleman</div>
+              <div class="author-role">CEO, Al-Futtaim Construction</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"Their structural audit saved our facility from major failures. The NDT reports were detailed and actionable. Highly professional team."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Sunita Kohli</div>
+              <div class="author-role">Plant Manager, NTPC Limited</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">"The industrial steel frame design was innovative and cost-effective. BuildX reduced our steel tonnage by 18% without compromising safety."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">VR</div>
+            <div>
+              <div class="author-name">Vikram Rao</div>
+              <div class="author-role">VP Engineering, Steel Authority of India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="section-label reveal">Ready to Build?</div>
+      <h2 class="reveal">Let's Engineer<br/><span style="color:var(--gold)">Something Great.</span></h2>
+      <p class="reveal delay-1">From concept to completion — we bring structural precision and engineering passion to every project.</p>
+      <div class="cta-btns reveal delay-2">
+        <a href="https://wa.me/917889443049?text=Hello%20BuildX%2C%20I%20want%20to%20discuss%20a%20structural%20project." target="_blank" class="btn-primary" id="cta-wa-btn">💬 WhatsApp Us</a>
+        <a href="tel:+917889443049" class="btn-secondary" id="cta-call-btn">📞 +91 78894 43049</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="section-label" style="justify-content:center;"><span style="display:none;"></span>Get In Touch</div>
+        <h3>Let's Build Something<br/><span style="color:var(--gold)">Great Together.</span></h3>
+        <p>Reach out directly — our engineering team responds fast.<br/>WhatsApp or call us anytime during working hours.</p>
+
+        <div class="contact-cards">
+          <div class="contact-info-card">
+            <div class="cic-icon">📍</div>
+            <div class="cic-text">
+              <strong>Our Office</strong>
+              <span>Sector 6, Unit 21</span>
+              <span>Gurgaon, Haryana</span>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="cic-icon">✉️</div>
+            <div class="cic-text">
+              <strong>Email Us</strong>
+              <a href="mailto:info@indianstructuralengineering.com">info@indianstructural<br/>engineering.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="cic-icon">📞</div>
+            <div class="cic-text">
+              <strong>Phone</strong>
+              <a href="tel:+917889443049">+91 78894 43049</a>
+              <a href="tel:+916006452319">+91 60064 52319</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="cic-icon">🕐</div>
+            <div class="cic-text">
+              <strong>Working Hours</strong>
+              <span>Mon – Sat</span>
+              <span>9:00 AM – 6:00 PM IST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-action-btns">
+          <a href="https://wa.me/917889443049?text=Hello%20BuildX%2C%20I%20want%20to%20discuss%20a%20structural%20engineering%20project." target="_blank" rel="noopener" class="btn-whatsapp" id="whatsapp-btn-1">
+            <span class="btn-icon">💬</span> WhatsApp Us
+          </a>
+          <a href="tel:+917889443049" class="btn-call" id="call-btn-1">
+            <span class="btn-icon">📞</span> Call: +91 78894 43049
+          </a>
+          <a href="tel:+916006452319" class="btn-call" id="call-btn-2" style="border-color:rgba(201,168,76,0.3); color:var(--muted);">
+            <span class="btn-icon">📞</span> Call: +91 60064 52319
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="display:inline-flex;" id="footer-logo-link">
+            <div class="nav-logo-icon">🏗</div>
+            Build<span>X</span>
+          </a>
+          <p>BuildX Indian Structural Engineering — bridges, towers, industrial facilities, and retrofitting solutions built with precision, strength, and purpose across India.</p>
+          <p style="margin-top:12px; font-size:0.82rem;">📍 Sector 6, Unit 21, Gurgaon, Haryana<br/>✉️ info@indianstructuralengineering.com</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services" id="footer-structural-link">Structural Design</a></li>
+            <li><a href="#services" id="footer-bridge-link">Bridge Engineering</a></li>
+            <li><a href="#services" id="footer-industrial-link">Industrial Structures</a></li>
+            <li><a href="#services" id="footer-retrofitting-link">Retrofitting</a></li>
+            <li><a href="#services" id="footer-foundation-link">Foundation Eng.</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about" id="footer-about-link">About Us</a></li>
+            <li><a href="#projects" id="footer-projects-link">Projects</a></li>
+            <li><a href="#process" id="footer-process-link">Our Process</a></li>
+            <li><a href="#testimonials" id="footer-testimonials-link">Testimonials</a></li>
+            <li><a href="#contact" id="footer-contact-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+917889443049" id="footer-phone1-link">+91 78894 43049</a></li>
+            <li><a href="tel:+916006452319" id="footer-phone2-link">+91 60064 52319</a></li>
+            <li><a href="https://wa.me/917889443049" target="_blank" id="footer-wa-link">WhatsApp</a></li>
+            <li><a href="mailto:info@indianstructuralengineering.com" id="footer-email-link">Email Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Certifications</h4>
+          <ul>
+            <li><a href="#" id="footer-iso-link">ISO 9001:2015</a></li>
+            <li><a href="#" id="footer-is-link">IS Code Compliant</a></li>
+            <li><a href="#" id="footer-irc-link">IRC Standards</a></li>
+            <li><a href="#" id="footer-cie-link">CIE Certified</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span>BuildX Indian Structural Engineering</span> — All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">▶</a>
+          <a href="#" class="social-link" id="social-insta" aria-label="Instagram">◈</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
