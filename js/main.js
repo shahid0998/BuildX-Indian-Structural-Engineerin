@@ -34,8 +34,10 @@
         this.y = Math.random() * H;
         this.vx = (Math.random() - 0.5) * 0.3;
         this.vy = (Math.random() - 0.5) * 0.3;
-        this.alpha = Math.random() * 0.4 + 0.05;
+        this.alpha = Math.random() * 0.35 + 0.05;
         this.r = Math.random() * 1.5 + 0.5;
+        // Mix of blue and red particles
+        this.isRed = Math.random() < 0.3;
       }
       update() {
         this.x += this.vx; this.y += this.vy;
@@ -44,7 +46,11 @@
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(201,168,76,${this.alpha})`;
+        if (this.isRed) {
+          ctx.fillStyle = `rgba(200,16,46,${this.alpha})`;
+        } else {
+          ctx.fillStyle = `rgba(26,79,160,${this.alpha})`;
+        }
         ctx.fill();
       }
     }
@@ -52,7 +58,7 @@
 
     function drawGrid() {
       const step = 60;
-      ctx.strokeStyle = 'rgba(201,168,76,0.03)';
+      ctx.strokeStyle = 'rgba(0,48,135,0.03)';
       ctx.lineWidth = 1;
       for (let x = 0; x < W; x += step) {
         ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
@@ -70,7 +76,7 @@
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 120) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(201,168,76,${0.08 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(0,48,135,${0.08 * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -141,7 +147,7 @@
         if (entry.isIntersecting) {
           const el = entry.target;
           const target = parseInt(el.dataset.count);
-          animateCount(el, target, target === 12 ? '+' : '+');
+          animateCount(el, target, '+');
           counterObserver.unobserve(el);
         }
       });
@@ -166,6 +172,6 @@
         if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
       });
       navLinks.forEach(a => {
-        a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--gold)' : '';
+        a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--accent)' : '';
       });
     });
