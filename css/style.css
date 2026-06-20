@@ -880,4 +880,15 @@ footer {
   .process-grid { grid-template-columns: 1fr; }
   .float-card { display: none; }
   .benefits-visual-stats { grid-template-columns: 1fr; }
+
+  /* ── Hide custom cursor on mobile / touchscreen ── */
+  #cursor, #cursor-ring { display: none !important; }
+  body { cursor: auto; }
+  .nav-mobile-btn,
+  .btn-primary,
+  .btn-secondary,
+  .btn-whatsapp,
+  .btn-call,
+  .service-card,
+  .project-card { cursor: auto; }
 }
