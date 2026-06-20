@@ -16,8 +16,8 @@
   --muted: #8a9ab5;
   --border: rgba(0,48,135,0.25);
   --border-accent: rgba(200,16,46,0.25);
-  --font-head: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-head: 'Times New Roman', Times, serif;
+  --font-body: 'Times New Roman', Times, serif;
 }
 html { scroll-behavior: smooth; }
 body {
