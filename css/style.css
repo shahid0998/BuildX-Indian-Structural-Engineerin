@@ -77,7 +77,7 @@ nav.scrolled {
   font-size: 1.3rem; font-weight: 800;
   letter-spacing: -0.5px;
   color: var(--white); text-decoration: none;
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; gap: 4px;
 }
 .nav-logo-img {
   height: 42px;
