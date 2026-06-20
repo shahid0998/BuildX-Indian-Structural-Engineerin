@@ -88,11 +88,11 @@ nav.scrolled {
 .nav-logo-sub {
   font-family: var(--font-body);
   font-size: 0.65rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
-  color: var(--white);
+  color: #ffffff;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 1;
 }
 .nav-links { display: flex; align-items: center; gap: 36px; }
 .nav-links a {
