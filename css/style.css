@@ -873,3 +873,79 @@ footer {
   .float-card { display: none; }
   .benefits-visual-stats { grid-template-columns: 1fr; }
 }
+
+/* ===== HERO BRAND PRESENTATION (WALLPAPER STYLE) ===== */
+.hero-brand-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  width: 100%;
+}
+.hero-logo-wrapper {
+  margin-bottom: 24px;
+  filter: drop-shadow(0 0 25px rgba(191, 149, 63, 0.45));
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.hero-brand-svg {
+  width: clamp(140px, 18vw, 190px);
+  height: auto;
+}
+.hero-brand-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(3.2rem, 8vw, 6.2rem);
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 8px 0;
+  background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.6));
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease 0.4s forwards;
+}
+.hero-brand-subtitle {
+  font-family: var(--font-head);
+  font-size: clamp(0.75rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease 0.6s forwards;
+}
+.hero-brand-separator {
+  width: clamp(150px, 30vw, 350px);
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, #bf953f, transparent);
+  margin: 14px 0;
+  opacity: 0;
+  transform: scaleX(0.3);
+  animation: separatorExpand 1s ease 0.7s forwards;
+}
+.hero-brand-tagline {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(0.72rem, 1.5vw, 1.05rem);
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #bf953f;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease 0.8s forwards;
+}
+
+@keyframes separatorExpand {
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
