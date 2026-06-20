@@ -87,11 +87,12 @@ nav.scrolled {
 .nav-logo span { color: var(--primary-light); }
 .nav-logo-sub {
   font-family: var(--font-body);
-  font-size: 0.58rem;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  color: var(--accent);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--white);
   text-transform: uppercase;
+  opacity: 0.9;
 }
 .nav-links { display: flex; align-items: center; gap: 36px; }
 .nav-links a {
